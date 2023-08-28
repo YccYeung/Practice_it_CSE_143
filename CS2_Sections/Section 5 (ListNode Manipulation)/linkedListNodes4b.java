@@ -1,0 +1,11 @@
+q.next.next = p.next;
+p.next = null;
+q.next.next.next = p;
+p = null;
+p = q.next;
+q.next = q.next.next;
+p.next = null;
+q.next.next.next = p;
+p = q;
+q = p.next.next.next;
+p.next.next.next = null;
